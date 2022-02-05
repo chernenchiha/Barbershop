@@ -1,0 +1,169 @@
+:root {
+    --main-text-color: #555555;
+    --black-text-color: #303030;
+    --white-text-color: #FFFFFF;
+    --grey-text-color: #9DA4BD;
+    --light-grey-rgba: #9DA4BD99;
+    --accent-text-color: #FF6C00;
+    --main-background-color: #FFFFFF;
+    --secondary-background-color: #F7F7F7;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+}
+
+/*common*/
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-list {
+    color: var(--white-text-color);
+}
+
+.header-link{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-text-color);
+}
+
+.title {
+    font-family: 'raleway', sans-serif;;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--black-text-color);
+}
+
+
+
+.btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    background: inherit;
+    border: 1px solid #FF6C00;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #FF6C00;
+}
+
+.btn-black-text{
+    color: var(--black-text-color);
+}
+
+.title-head{
+    font-size: 72px;
+    line-height: 1.18;
+}
+
+.title-white {
+    color: var(--white-text-color);
+}
+
+/*ФОН ЧТОБ ВИДЕТЬ БЕЛІЕ БУКВІ*/
+.background{
+    background-color: lightgrey;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--black-text-color);
+}
+
+.subtitle-grey{
+    color: var(--light-grey-rgba);
+}
+
+.subtitle-white {
+    color: var(--white-text-color);
+}
+
+.text-grey {
+    color: var(--grey-text-color);
+}
+
+.networks {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: var(--black-text-color);
+}
+
+.networks:hover,
+.networks:focus {
+    color: var(--accent-text-color);
+}
+
+/*about*/
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+}
+
+
+.statistics-bold-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--black-text-color);
+}
+
+.statistics-accent-text {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+/*Masters*/
+.masters-text-color {
+    font-size: 14px;
+    line-height: 1.36;
+    color: var(--accent-text-color);
+}
+
+
+.address {
+    font-style: inherit;
+}
+
+.mail-link {
+    text-decoration: underline;
+}
+
+.mnemonics {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+}

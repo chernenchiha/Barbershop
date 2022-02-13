@@ -19,7 +19,22 @@ body {
 }
 
 /*common*/
+p,
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -28,11 +43,51 @@ body {
     color: inherit;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.header {
+    padding-top: 32px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 70px;
+}
+
 .nav-list {
+    display: flex;
     color: var(--white-text-color);
 }
 
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+
 .header-link{
+    margin-left: auto;
+    margin-right: 40px;
+
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -53,8 +108,10 @@ body {
 }
 
 
-
 .btn {
+    min-width: 160px;
+    padding: 12px 16px;
+
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -65,6 +122,7 @@ body {
     border: 1px solid #FF6C00;
     box-sizing: border-box;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .btn:hover,
@@ -72,17 +130,46 @@ body {
     background: #FF6C00;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  } 
+  
+
 .btn-black-text{
     color: var(--black-text-color);
 }
 
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .title-head{
+    margin-bottom: 40px;
+
     font-size: 72px;
     line-height: 1.18;
 }
 
+.title {
+    margin-bottom: 20px;
+}
+
 .title-white {
+    margin-bottom: 44px;
+
     color: var(--white-text-color);
+}
+
+.hero .subtitle-grey {
+    margin-bottom: 30px;
 }
 
 /*ФОН ЧТОБ ВИДЕТЬ БЕЛІЕ БУКВІ*/
@@ -91,6 +178,8 @@ body {
 }
 
 .subtitle {
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -124,11 +213,26 @@ body {
 }
 
 /*about*/
+
 .about-text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
     font-size: 14px;
     line-height: 1.86;
 }
 
+.about-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.about-item {
+    margin-top: 30px;
+    margin-left: 30px;
+}
 
 .statistics-bold-text {
     font-weight: 600;
@@ -146,6 +250,10 @@ body {
     letter-spacing: 0.05em;
 }
 
+.prices-text{
+    margin-bottom: 20px;
+}
+
 /*Masters*/
 .masters-text-color {
     font-size: 14px;
@@ -153,6 +261,48 @@ body {
     color: var(--accent-text-color);
 }
 
+.masters .title{
+    margin-bottom: 44px;
+}
+
+.masters-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.masters-item{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.masters-wrapper {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.masters-name {
+    margin-bottom: 8px;
+}
+
+
+
+.gallery-subtitle {
+    margin-bottom: 44px;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.gallery-item {
+    margin-top: 30px;
+    margin-left: 30px;
+}
 
 .address {
     font-style: inherit;
@@ -166,4 +316,11 @@ body {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
+}
+
+
+
+.footer-container {
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
